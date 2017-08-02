@@ -1,0 +1,60 @@
+{
+  "name": "refract",
+  "version": "0.0.1",
+  "description": "A wrapper for React Components/Enzyme shallow that allows testing of lifecycle events and component instances with react 16.0.0-alpha-12 (or other as of this date unsupported versions). Works for react native shallow testing as well.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "babel src --presets babel-preset-react-native --ignore __tests__ --out-dir lib",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bestbrains/refract.git"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "enzyme",
+    "jest",
+    "component",
+    "shallow",
+    "wrapper",
+    "instance",
+    "fix"
+  ],
+  "peerDependencies": {
+    "enzyme": "^2.9.1",
+    "react": "^16.0.0-beta.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "20.0.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-react-native": "2.1.0",
+    "enzyme": "^2.9.1",
+    "eslint": "^4.2.0",
+    "eslint-plugin-jest": "^20.0.3",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-react-native": "^2.3.2",
+    "jest": "20.0.4",
+    "react": "16.0.0-beta.2",
+    "react-dom": "16.0.0-beta.2",
+    "react-native": "0.46.1",
+    "react-test-renderer": "16.0.0-alpha.12"
+  },
+  "jest": {
+    "preset": "react-native",
+    "testRegex": "./__tests__/[^setup].*test.js$",
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|native-base|react-navigation|react-native-fabric)"
+    ]
+  },
+  "author": "KBroloes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bestbrains/refract/issues"
+  },
+  "homepage": "https://github.com/Bestbrains/refract#readme"
+}
