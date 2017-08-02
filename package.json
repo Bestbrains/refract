@@ -1,6 +1,6 @@
 {
   "name": "react-refract",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A wrapper for React Components/Enzyme shallow that allows testing of lifecycle events and component instances with react 16.0.0-alpha-12 (or other as of this date unsupported versions). Works for react native shallow testing as well.",
   "main": "index.js",
   "scripts": {
