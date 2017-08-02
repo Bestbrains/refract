@@ -20,9 +20,9 @@ export default function Refract(ComponentUnderTest, props) {
 
 function RefractFactory(setInstance, ComponentUnderTest) {
     class RefractedComponent extends ComponentUnderTest {
-        render() {
+        render(...args) {
             setInstance(this);
-            return super.render(...arguments);
+            return super.render(...args);
         }
     }
     for(let key in ComponentUnderTest) {
