@@ -11,7 +11,7 @@ This package provides a workaround, by wrapping the component you want to test, 
 
 To use:
 
-    import Refract from 'refract';
+    import Refract from 'react-refract';
 
     import { Component } from './component.js'; // Component under test
 
@@ -33,7 +33,7 @@ To use:
 
 You can also use the underlying Wrap function and just use shallow from enzyme if you prefer to mount your props the old fashioned way:
 
-    import { Wrap } from 'refract';
+    import { Wrap } from 'react-refract';
     import { shallow } from 'enzyme';
 
     import { Component } from './component.js'; // Component under test
